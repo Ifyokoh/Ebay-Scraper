@@ -6,6 +6,16 @@ from bs4 import BeautifulSoup
 
 
 def scrape_data(no_samples_to_scrape, keywords):
+  """
+  Scrapes ebay website for a number of samples for each keyword
+  
+  :param no_samples_to_scrape: integer of items to scrape for each keyword.
+  :param keywords: list of keywords to scrape.
+  :return: pandas dataframe with the following columns:
+    Category (keyword), title, price, item url, image url.
+    
+  """
+
   data = {"category": [], "item_title": [], "item_price": [], "item_url": [], "item_image": []}
   for keyword in keywords:
     page_url = []
