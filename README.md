@@ -14,4 +14,4 @@ Example
 
 To connect to database and insert the scraped data
 - Run database.py
-- Run `database(scrape_data(1000, ['bags', 'shoes', 'dress']))`
+- Run `create_insert_table(scrape_data(1000, ['bags', 'shoes', 'dress']))`
